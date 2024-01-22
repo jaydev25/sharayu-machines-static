@@ -3,7 +3,11 @@ window.addEventListener('scroll', () => {
   var nav = document.getElementById('nav');
 
   if (verticalScrollPx === 0) {
-    nav.style.backgroundColor = '#00000000';
+    if (window.screen.availWidth < 600) {
+      nav.style.backgroundColor = 'var(--dark)';
+    } else {
+      nav.style.backgroundColor = '#00000000';
+    }
 } else {
     nav.style.backgroundColor = 'var(--dark)';
   }

@@ -15,31 +15,20 @@
 }
 #nav {
   background-color: #00000000;
+  top: -1px
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #home {
     width: 100%;
     margin: auto;
     display: block;
     position: relative;
   }
-}
 
-@media (min-width: 400px) {
-  #home {
-    width: 100%;
-    margin: auto;
-    display: block;
-    position: relative;
-    top: -75px;
+  #nav {
+    background-color: var(--dark);
   }
-}
-
-@media (max-width: 400px) {
-  /* h1 {
-    font-size: 20px !important;
-  } */
 
   h2 {
     font-size: 16px !important;
@@ -47,5 +36,15 @@
 
   h3 {
     font-size: 14px !important;
+  }
+}
+
+@media (min-width: 600px) {
+  #home {
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: -75px;
   }
 }
